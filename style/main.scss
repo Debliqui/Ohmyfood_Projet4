@@ -5,7 +5,7 @@
 /* Pages */
 
 /* Modules */
-
+@import '../style/modules/navBar.css';
 
 /* Design System */
 :root{
@@ -93,8 +93,8 @@ h4{
 h5{
     font-family: var(--body-highlight-font);
     font-style: normal;
-    font-weight: var(--body-highlight-font-weight);
-    font-size: var(--body-highlight-font-size);
+    font-weight: var(--body-highlight-weight);
+    font-size: var(--body-highlight-size);
     line-height: var(--body-highlight-line-height);
     color: var(--black);
 }
