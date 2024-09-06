@@ -36,6 +36,10 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: var(--body-font);
   font-style: normal;

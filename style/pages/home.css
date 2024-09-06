@@ -63,7 +63,7 @@
   margin-right: 20px;
   border-radius: 20px;
   background-color: #F6F6F6;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .fonctionnement__container__list__etapes p {
   position: absolute;
@@ -90,4 +90,74 @@
 .fonctionnement__container #n3 {
   width: 18px;
   height: 18px;
+}
+
+.list-restaurant__title {
+  position: absolute;
+  width: 275px;
+  height: 28px;
+  top: 894px;
+  left: 20px;
+}
+.list-restaurant__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  position: absolute;
+  top: 942px;
+  left: 17px;
+  width: 340px;
+  height: 1058px;
+}
+.list-restaurant .card {
+  width: 340px;
+  height: 251px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.list-restaurant .card__image {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  object-position: bottom;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.list-restaurant .card__container {
+  position: relative;
+  padding: 16px 0 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  gap: 5px;
+}
+.list-restaurant .card__container .icone-heart {
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+}
+.list-restaurant .card__container .badge_nouveau {
+  position: absolute;
+  right: 13px;
+  bottom: 209px;
+  width: 80px;
+  height: 29px;
+  background-color: var(--tertiary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.list-restaurant .card__container .badge_nouveau p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
 }/*# sourceMappingURL=home.css.map */
