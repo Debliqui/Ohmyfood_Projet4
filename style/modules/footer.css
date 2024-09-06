@@ -1,0 +1,38 @@
+.footer__container {
+  position: absolute;
+  top: 2066px;
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  width: 375px;
+  padding: 22px 25px 22px 25px;
+  gap: 16px;
+}
+.footer__container h1 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.24px;
+}
+.footer__container__list {
+  width: 190px;
+  height: 99px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: white;
+}
+.footer__container__list h5 {
+  color: white;
+}
+.footer__container__list p {
+  color: white;
+}
+.footer__container__list__row {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+}
+.footer__container__list__row i {
+  width: 13px;
+}/*# sourceMappingURL=footer.css.map */

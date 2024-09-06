@@ -1,0 +1,40 @@
+.footer__container{
+    position: absolute;
+    top: 2066px;
+    display: flex;
+    flex-direction: column;
+    background-color:#353535;
+    width: 375px;
+    padding: 22px 25px 22px 25px;
+    gap: 16px;
+    & h1{
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26.24px;
+    }
+    
+    &__list{
+        width: 190px;
+        height: 99px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        color: white;
+        & h5{
+            color: white;
+        }
+        & p{
+            color: white;
+        }
+        &__row{
+            display: flex;
+            flex-direction: row;
+            gap: 11px;
+            & i{
+                width: 13px;
+            }
+        }
+    }
+    
+}

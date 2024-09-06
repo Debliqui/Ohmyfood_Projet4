@@ -5,6 +5,7 @@
 /* Modules */
 @import '../style/modules/navBar.css';
 @import '../style/modules/button_linear-gardien.css';
+@import '../style/modules/footer.css';
 /* Design System */
 :root {
   /* Colors */
