@@ -1,0 +1,24 @@
+.navBar_restaurant {
+  width: 100%;
+  height: 63px;
+}
+.navBar_restaurant__container {
+  width: 375px;
+  height: 63px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.navBar_restaurant__container .go_back {
+  position: absolute;
+  left: 23px;
+  width: 30px;
+  height: 30px;
+}
+.navBar_restaurant__container h1 {
+  font-size: 30px;
+}/*# sourceMappingURL=navBar_restaurant.css.map */
