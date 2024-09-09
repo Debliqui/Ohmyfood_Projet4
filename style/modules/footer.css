@@ -1,6 +1,4 @@
 .footer__container {
-  position: absolute;
-  top: 2066px;
   display: flex;
   flex-direction: column;
   background-color: #353535;

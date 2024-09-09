@@ -26,7 +26,7 @@
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 24px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 .introduction__container button a {
   text-decoration: none;
@@ -160,4 +160,9 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 16.41px;
+}
+
+.footer__homepages {
+  position: absolute;
+  top: 2066px;
 }/*# sourceMappingURL=home.css.map */
