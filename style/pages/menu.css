@@ -1,0 +1,8 @@
+.image_introduction {
+  width: 375px;
+  height: 275px;
+}
+.image_introduction img {
+  object-fit: cover;
+  width: 100%;
+}/*# sourceMappingURL=menu.css.map */
