@@ -16,6 +16,7 @@
   --tertiary-color: #99E2D0;
   --black: black;
   --background: #F5F5F5;
+  --background-secondry: #F6F6F6;
   /* Text configuration */
   --header-font: "Shrikhand", serif;
   --title-font: "Roboto", sans-serif;
@@ -95,6 +96,15 @@ h5 {
   font-weight: var(--body-highlight-weight);
   font-size: var(--body-highlight-size);
   line-height: var(--body-highlight-line-height);
+  color: var(--black);
+}
+
+h6 {
+  font-family: var(--body-font);
+  font-style: normal;
+  font-size: 15.04px;
+  font-weight: 300;
+  line-height: 17.63px;
   color: var(--black);
 }
 
