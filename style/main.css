@@ -2,6 +2,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
 /* Pages */
 @import '../style/pages/home.css';
+@import '../style/pages/menu.css';
 /* Modules */
 @import '../style/modules/navBar.css';
 @import '../style/modules/navBar_restaurant.css';
