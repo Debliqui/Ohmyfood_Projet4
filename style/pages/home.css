@@ -9,7 +9,7 @@
   width: 275px;
   height: 68px;
 }
-.introduction__container h3 {
+.introduction__container p {
   position: absolute;
   top: 220px;
   left: 34px;
@@ -29,10 +29,10 @@
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 .introduction__container button a {
-  text-decoration: none;
-}
-.introduction__container button h5 {
   color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
 }
 
 .fonctionnement__container {
@@ -65,19 +65,25 @@
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.fonctionnement__container__list__etapes p {
+.fonctionnement__container__list__etapes span {
   position: absolute;
   left: 22px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
   font-size: 14.18px;
+  line-height: 16.62px;
   width: 24px;
   height: 24px;
   color: white;
   background-color: var(--primary-color);
   border-radius: 20px;
+}
+.fonctionnement__container__list__etapes p {
+  font-weight: 500;
+  line-height: 18.75px;
 }
 .fonctionnement__container #n1 {
   width: 13px;
@@ -137,6 +143,11 @@
   box-sizing: border-box;
   gap: 5px;
 }
+.list-restaurant .card__container p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 19.92px;
+}
 .list-restaurant .card__container .icone-heart {
   position: absolute;
   right: 25px;
@@ -156,10 +167,11 @@
   border-radius: 2px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.list-restaurant .card__container .badge_nouveau p {
+.list-restaurant .card__container .badge_nouveau span {
   font-size: 14px;
   font-weight: 500;
   line-height: 16.41px;
+  color: black;
 }
 
 .footer__homepages {

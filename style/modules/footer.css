@@ -6,8 +6,9 @@
   padding: 22px 25px 22px 25px;
   gap: 16px;
 }
-.footer__container h1 {
+.footer__container h2 {
   color: white;
+  font-family: var(--header-font);
   font-size: 18px;
   font-weight: 400;
   line-height: 26.24px;
@@ -20,16 +21,18 @@
   gap: 7px;
   color: white;
 }
-.footer__container__list h5 {
-  color: white;
-}
 .footer__container__list p {
+  line-height: 18.75px;
   color: white;
 }
 .footer__container__list__row {
   display: flex;
   flex-direction: row;
   gap: 11px;
+}
+.footer__container__list__row p {
+  font-weight: 500;
+  line-height: 18.75px;
 }
 .footer__container__list__row i {
   width: 13px;
