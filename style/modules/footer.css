@@ -21,7 +21,9 @@
   gap: 7px;
   color: white;
 }
-.footer__container__list p {
+.footer__container__list a {
+  font-size: 16px;
+  font-weight: 400;
   line-height: 18.75px;
   color: white;
 }
@@ -30,7 +32,8 @@
   flex-direction: row;
   gap: 11px;
 }
-.footer__container__list__row p {
+.footer__container__list__row span {
+  font-size: 16px;
   font-weight: 500;
   line-height: 18.75px;
 }
