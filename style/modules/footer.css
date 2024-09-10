@@ -30,13 +30,20 @@
 .footer__container__list__row {
   display: flex;
   flex-direction: row;
+  width: 190px;
+  height: 19px;
   gap: 11px;
+}
+.footer__container__list__row #fork-knife {
+  width: 11px;
+  height: 13px;
+}
+.footer__container__list__row #hand {
+  width: 11.92px;
+  height: 13px;
 }
 .footer__container__list__row span {
   font-size: 16px;
   font-weight: 500;
   line-height: 18.75px;
-}
-.footer__container__list__row i {
-  width: 13px;
 }/*# sourceMappingURL=footer.css.map */

@@ -29,16 +29,22 @@
         &__row{
             display: flex;
             flex-direction: row;
+            width: 190px;
+            height: 19px;
             gap: 11px;
+            & #fork-knife{
+                width: 11px;
+                height: 13px;
+            }
+            & #hand{
+                width: 11.92px;
+                height: 13px;
+            }
             & span{
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 18.75px;
             }
-            & i{
-                width: 13px;
-            }
         }
     }
-
 }
