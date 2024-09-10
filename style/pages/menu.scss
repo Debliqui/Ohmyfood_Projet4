@@ -24,15 +24,18 @@
         flex-direction: column;
         align-items: center;
         gap: 40px;
-        & h6{
-            font-weight: 700;
-        }
         &__title{
             width: 341px;
             height: 29px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            & h2{
+                font-family: var(--header-font);
+                font-size: 28px;
+                font-weight: var(--header-weight);
+                line-height: 40.82px;
+            }
             & img{
                 width: 22px;
                 height: 21px;
@@ -52,13 +55,15 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
-        & h5{
-            font-weight: 300;
-        }
         &__title{
             border-bottom: 3px solid var(--tertiary-color);
             width: 40px;
             height: 24px;
+            & h3{
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 18.75px;
+            }
         }
     }
 
@@ -78,11 +83,14 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            & h3{
+            & h4{
+                font-size: 18px;
                 font-weight: 500;
+                line-height: 21.09px;
             }
             & p{
                 font-size: 15.04px;
+                line-height: 17.63px;
             }
         }
         &__right{
@@ -91,6 +99,11 @@
             display: flex;
             flex-direction: row;
             align-items: end;
+            & span{
+                font-size: 15.04px;
+                font-weight: 700;
+                line-height: 17.63px;
+            }
         }
     }
 }

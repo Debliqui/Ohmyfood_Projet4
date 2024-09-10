@@ -5,8 +5,9 @@
     width: 375px;
     padding: 22px 25px 22px 25px;
     gap: 16px;
-    & h1{
+    & h2{
         color: white;
+        font-family: var(--header-font);
         font-size: 18px;
         font-weight: 400;
         line-height: 26.24px;
@@ -19,16 +20,21 @@
         flex-direction: column;
         gap: 7px;
         color: white;
-        & h5{
-            color: white;
-        }
-        & p{
+        & a{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18.75px;
             color: white;
         }
         &__row{
             display: flex;
             flex-direction: row;
             gap: 11px;
+            & span{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 18.75px;
+            }
             & i{
                 width: 13px;
             }
