@@ -1,6 +1,8 @@
 .navBar {
   width: 100%;
   height: 113px;
+}
+.navBar__container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
