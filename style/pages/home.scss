@@ -1,4 +1,4 @@
-@import '../modules/button_linear-gardien.scss' ;
+@import '../modules/button_linear-gardien.scss';
 
 .introduction__container{
     width: 100%;
@@ -17,14 +17,18 @@
         width: 315px;
         height: 46px;
         font-weight: 300;
+        display: flex;
+        align-items: center;
     }
-    & button{
+    & a{
         position: absolute;
         top: 293px;
         left: 82px;
+    }
+    & .button{
         width: 218px;
         height: 50px;
-        @include bouton_linear-gardien;
+        @include button_linear-gardien;
     }
 }
 
