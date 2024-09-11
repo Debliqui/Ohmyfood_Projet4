@@ -15,7 +15,8 @@
 }
 .navBar_restaurant__container .go_back {
   position: absolute;
-  left: 23px;
+  top: 17px;
+  left: 17px;
   width: 30px;
   height: 30px;
   display: flex;
