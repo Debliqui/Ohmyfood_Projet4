@@ -47,10 +47,10 @@
 .menu__container .button {
   width: 186px;
   height: 50px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(var(--secondary-color), var(--primary-color));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: none;
   border-radius: 24px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -59,6 +59,16 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  opacity: 1;
+}
+.menu__container .button:hover {
+  animation: button_linear-gardien 300ms ease-out forwards;
+}
+@keyframes button_linear-gardien {
+  100% {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    opacity: 0.85;
+  }
 }
 .menu__content {
   width: 349px;
