@@ -131,6 +131,37 @@
   width: 340px;
   height: 1058px;
 }
+.list-restaurant .box__card {
+  position: relative;
+}
+.list-restaurant .like {
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+  width: 22px;
+  height: 21px;
+}
+.list-restaurant .like .heart {
+  transition: fill 0.3s;
+}
+.list-restaurant .like .heart path {
+  stroke: #101010;
+}
+.list-restaurant .like .icone-heart {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+.list-restaurant .like .icone-heart input {
+  display: none;
+}
+.list-restaurant .like .icone-heart input:checked + .heart {
+  fill: url(#grad1);
+  stroke: none;
+}
+.list-restaurant .like .icone-heart input:checked + .heart path {
+  stroke: none;
+}
 .list-restaurant .card {
   width: 340px;
   height: 251px;
@@ -163,11 +194,6 @@
   font-size: 17px;
   font-weight: 300;
   line-height: 19.92px;
-}
-.list-restaurant .card__container .icone-heart {
-  position: absolute;
-  right: 25px;
-  bottom: 33px;
 }
 .list-restaurant .card__container .badge_nouveau {
   position: absolute;

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
 /* Pages */
 @import '../style/pages/home.css';
 @import '../style/pages/menu.css';
@@ -8,6 +7,7 @@
 @import '../style/modules/navBar_restaurant.css';
 @import '../style/modules/button_linear-gardien.css';
 @import '../style/modules/footer.css';
+@import '../style/modules/likes.css';
 /* Design System */
 :root {
   /* Colors */

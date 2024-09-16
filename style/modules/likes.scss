@@ -1,0 +1,23 @@
+@mixin like__setting{  
+    .heart {
+        transition: fill 0.3s;
+        & path{
+            stroke: #101010;
+        }
+    }
+    .icone-heart{
+        display: inline-block;
+        cursor: pointer;
+        user-select: none;
+        & input{
+            display: none;
+        }
+        & input:checked + .heart{
+            fill: url(#grad1);
+            stroke: none;
+            & path{
+                stroke: none;
+            }
+        }
+    }
+}

@@ -38,11 +38,32 @@
   font-weight: var(--header-weight);
   line-height: 40.82px;
 }
-.menu__container__title img {
+.menu__container__title .like {
   width: 22px;
   height: 21px;
   padding-right: 24px;
   padding-top: 8px;
+}
+.menu__container__title .like .heart {
+  transition: fill 0.3s;
+}
+.menu__container__title .like .heart path {
+  stroke: #101010;
+}
+.menu__container__title .like .icone-heart {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+.menu__container__title .like .icone-heart input {
+  display: none;
+}
+.menu__container__title .like .icone-heart input:checked + .heart {
+  fill: url(#grad1);
+  stroke: none;
+}
+.menu__container__title .like .icone-heart input:checked + .heart path {
+  stroke: none;
 }
 .menu__container .button {
   width: 186px;
