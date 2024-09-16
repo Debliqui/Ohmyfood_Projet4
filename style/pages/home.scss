@@ -1,4 +1,5 @@
 @import '../modules/button_linear-gardien.scss';
+@import '../modules/likes.scss';
 
 .introduction__container{
     width: 100%;
@@ -113,6 +114,19 @@
         width: 340px;
         height: 1058px;
     }
+    .box__card{
+        position: relative;
+    }
+    .like{
+        position: absolute;
+        right: 25px;
+        bottom: 33px;
+        width: 22px;
+        height: 21px;
+        @include like__setting;
+    }
+    
+    
     .card{
         width: 340px;
         height: 251px;
@@ -142,11 +156,6 @@
                 font-size: 17px;
                 font-weight: 300;
                 line-height: 19.92px;
-            }
-            & .icone-heart{
-                position: absolute;
-                right: 25px;
-                bottom: 33px;
             }
             & .badge_nouveau{
                 position: absolute;
