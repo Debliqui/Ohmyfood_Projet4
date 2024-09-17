@@ -118,9 +118,6 @@
   gap: 18px;
   width: 100%;
 }
-.list-restaurant .box__card {
-  position: relative;
-}
 .list-restaurant .like {
   width: 22px;
   height: 21px;
@@ -199,9 +196,4 @@
   font-size: 17px;
   font-weight: 300;
   line-height: 19.92px;
-}
-
-.footer__homepages {
-  position: absolute;
-  top: 2066px;
 }/*# sourceMappingURL=home.css.map */
