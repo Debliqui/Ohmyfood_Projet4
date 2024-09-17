@@ -108,16 +108,15 @@
 }
 
 .list-restaurant {
-  margin-top: 84px;
+  margin: 54px 0 66px 0;
 }
 .list-restaurant__cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding-left: 20px;
   gap: 18px;
   width: 100%;
-  height: 1058px;
 }
 .list-restaurant .box__card {
   position: relative;
