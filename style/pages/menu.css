@@ -91,7 +91,7 @@
   }
 }
 .menu__content {
-  width: 349px;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -108,42 +108,77 @@
   line-height: 18.75px;
 }
 .menu .card__row {
+  width: 100%;
   height: 69px;
   border-radius: 15px;
-  padding: 0 15px;
   background-color: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  justify-content: left;
   align-items: center;
-  gap: 5px;
-}
-.menu .card__row__left {
-  width: 287px;
-  height: 42px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.menu .card__row__left h4 {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21.09px;
-}
-.menu .card__row__left p {
-  font-size: 15.04px;
-  font-weight: 300;
-  line-height: 17.63px;
+  overflow: hidden;
 }
 .menu .card__row__right {
-  width: 27px;
-  height: 42px;
   display: flex;
   flex-direction: row;
-  align-items: end;
+  align-items: center;
+  cursor: pointer;
+  margin-right: -59px;
+}
+.menu .card__row__right:hover + .card__row__left {
+  width: 68%;
 }
 .menu .card__row__right span {
   font-size: 15.04px;
   font-weight: 700;
   line-height: 17.63px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  padding-right: 15px;
+}
+.menu .card__row__right .check {
+  width: 59px;
+  height: 69px;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu .card__row__right .check i {
+  color: white;
+}
+.menu .card__row__left {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 15px;
+  transition: transform 300ms;
+}
+.menu .card__row__left h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  width: 100%;
+  height: 21px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu .card__row__left p {
+  font-size: 15.04px;
+  font-weight: 300;
+  line-height: 17.63px;
+  width: 100%;
+  height: 19px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }/*# sourceMappingURL=menu.css.map */
