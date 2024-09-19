@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 /* Pages */
-@import '../style/pages/home.css';
-@import '../style/pages/menu.css';
+@import "../style/pages/home.css";
+@import "../style/pages/menu.css";
 /* Modules */
-@import '../style/modules/navBar.css';
-@import '../style/modules/navBar_restaurant.css';
-@import '../style/modules/button_linear-gardien.css';
-@import '../style/modules/footer.css';
-@import '../style/modules/likes.css';
+@import "../style/modules/navBar.css";
+@import "../style/modules/navBar_restaurant.css";
+@import "../style/modules/button_linear-gardien.css";
+@import "../style/modules/footer.css";
+@import "../style/modules/likes.css";
 /* Design System */
 :root {
   /* Colors */
-  --primary-color: #9356DC;
-  --secondary-color: #FF79DA;
-  --tertiary-color: #99E2D0;
+  --primary-color: #9356dc;
+  --secondary-color: #ff79da;
+  --tertiary-color: #99e2d0;
   --black: black;
-  --background: #F5F5F5;
-  --background-secondry: #F6F6F6;
+  --background: #f5f5f5;
+  --background-secondry: #f6f6f6;
   /* Text configuration */
   --header-font: "Shrikhand", serif;
   --title-font: "Roboto", sans-serif;
@@ -26,8 +26,8 @@
   --title-weight: 700;
   --body-weight: 400;
   --body-highlight-weight: 500;
-  --header-size: 30px ;
-  --title-size: 24px ;
+  --header-size: 30px;
+  --title-size: 24px;
   --body-size: 16px;
   --body-highlight-size: 16px;
   --header-line-height: 40.82px;
