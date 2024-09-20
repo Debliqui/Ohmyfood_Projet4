@@ -96,6 +96,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  animation: display-content 3000ms cubic-bezier(0.17, 0.84, 0.44, 1) both;
 }
 .menu__content__title {
   border-bottom: 3px solid var(--tertiary-color);
@@ -107,6 +108,14 @@
   font-weight: 300;
   line-height: 18.75px;
 }
+@keyframes display-content {
+  0% {
+    transform: translateY(-110%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .menu .card__row {
   height: 69px;
   border-radius: 15px;
@@ -117,6 +126,37 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  animation: display-card 2000ms ease both;
+}
+.menu .card__row--1 {
+  animation-delay: 200ms;
+}
+.menu .card__row--2 {
+  animation-delay: 400ms;
+}
+.menu .card__row--3 {
+  animation-delay: 600ms;
+}
+.menu .card__row--4 {
+  animation-delay: 800ms;
+}
+.menu .card__row--5 {
+  animation-delay: 1000ms;
+}
+.menu .card__row--6 {
+  animation-delay: 1200ms;
+}
+.menu .card__row--7 {
+  animation-delay: 1400ms;
+}
+.menu .card__row--8 {
+  animation-delay: 1600ms;
+}
+.menu .card__row--9 {
+  animation-delay: 1800ms;
+}
+.menu .card__row--10 {
+  animation-delay: 2000ms;
 }
 .menu .card__row__left {
   display: flex;
@@ -159,6 +199,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
   margin-right: -59px;
   transition: margin-left 300ms, translate 300ms;
 }
@@ -187,4 +228,12 @@
 .menu .card__row__right .checkButton input:checked + .card__row__right__button {
   translate: -59px;
   margin-left: 59px;
+}
+@keyframes display-card {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=menu.css.map */

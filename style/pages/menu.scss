@@ -1,6 +1,13 @@
 @import "../modules/button_linear-gardien.scss";
 @import "../modules/likes.scss";
 
+$anim-dur-cards: 2000ms;
+$num-cards: 10;
+$anim-delay-cards: $anim-dur-cards / $num-cards;
+
+$anim-dur-block: 3000ms;
+
+
 .image_introduction {
   width: 100%;
   height: 275px;
@@ -57,6 +64,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    animation: display-content $anim-dur-block cubic-bezier(.17,.84,.44,1) both;
     &__title {
       border-bottom: 3px solid var(--tertiary-color);
       width: 40px;
@@ -65,6 +73,14 @@
         font-size: 16px;
         font-weight: 300;
         line-height: 18.75px;
+      }
+    }
+    @keyframes display-content {
+      0% {
+        transform: translateY(-110%);
+      }
+      100% {
+        transform: translateY(0);
       }
     }
   }
@@ -78,6 +94,13 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    animation: display-card $anim-dur-cards ease both;
+    @for $i from 1 through $num-cards {
+      &--#{$i} {
+        animation-delay: $anim-delay-cards * $i;
+      }
+    }
+
     &__left {
       display: flex;
       flex-direction: column;
@@ -118,6 +141,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        cursor: pointer;
         margin-right: -59px;
         transition: margin-left 300ms, translate 300ms;
       }
@@ -146,6 +170,14 @@
       .checkButton input:checked + .card__row__right__button {
         translate: -59px;
         margin-left: 59px;
+      }
+    }
+    @keyframes display-card {
+      0% {
+        transform: translateX(-110%);
+      }
+      100% {
+        transform: translateX(0);
       }
     }
   }
