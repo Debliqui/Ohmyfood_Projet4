@@ -1,7 +1,11 @@
+/****** Animation on page loading  ******/
+
+/* Settings > Animation letter */
 $anim-dur: 600ms;
 $num-letter: 10;
 $anim-delay: calc($anim-dur / $num-letter);
 
+/* Settings > Animation progress bar */
 $prog-bar-dur: 3000ms;
 $prog-bar-delay: 200ms;
 
@@ -101,14 +105,14 @@ $prog-bar-delay: 200ms;
 }
 
 /******* Start Home content ********/
-.homepage{
+.homepage {
   animation: home-content 10ms 3000ms both;
   @keyframes home-content {
     /* Animation home content > appearance after Start Loader */
-    0%{
+    0% {
       transform: scaleX(0);
     }
-    100%{
+    100% {
       transform: scaleX(1);
     }
   }

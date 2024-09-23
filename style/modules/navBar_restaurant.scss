@@ -1,28 +1,30 @@
-.navBar_restaurant{
+/****** NavBar Menu ******/
+.navBar_restaurant {
+  width: 100%;
+  height: 63px;
+  &__container {
     width: 100%;
     height: 63px;
-    &__container{
-        width: 100%;
-        height: 63px;
-        background-color: #ffffff;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-        & .go_back{
-            position: absolute;
-            top: 17px;
-            left: 17px;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        & h1{
-            font-size: 30px;
-        }
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    /* Icon go_back > link homepage */
+    & .go_back {
+      position: absolute;
+      top: 17px;
+      left: 17px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+    & h1 {
+      font-size: 30px;
+    }
+  }
 }

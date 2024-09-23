@@ -1,3 +1,4 @@
+/****** Footer homepage and menupages ******/
 .footer__container {
   display: flex;
   flex-direction: column;
@@ -5,6 +6,8 @@
   width: 100%;
   padding: 22px 25px 22px 25px;
   gap: 16px;
+  /* Logo "Ohmyfood"*/
+  /* Link list */
 }
 .footer__container h3 {
   color: white;
@@ -20,6 +23,7 @@
   flex-direction: column;
   gap: 7px;
   color: white;
+  /* Link */
 }
 .footer__container__list a {
   font-size: 16px;
@@ -33,6 +37,8 @@
   width: 190px;
   height: 19px;
   gap: 11px;
+  /* Icon sizes */
+  /* Different fonts > text without icon */
 }
 .footer__container__list__row #fork-knife {
   width: 11px;

@@ -1,50 +1,55 @@
-.footer__container{
+/****** Footer homepage and menupages ******/
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  width: 100%;
+  padding: 22px 25px 22px 25px;
+  gap: 16px;
+  /* Logo "Ohmyfood"*/
+  & h3 {
+    color: white;
+    font-family: var(--header-font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.24px;
+  }
+  /* Link list */
+  &__list {
+    width: 190px;
+    height: 99px;
     display: flex;
     flex-direction: column;
-    background-color:#353535;
-    width: 100%;
-    padding: 22px 25px 22px 25px;
-    gap: 16px;
-    & h3{
-        color: white;
-        font-family: var(--header-font);
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 26.24px;
+    gap: 7px;
+    color: white;
+    /* Link */
+    & a {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18.75px;
+      color: white;
     }
-    
-    &__list{
-        width: 190px;
-        height: 99px;
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        color: white;
-        & a{
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 18.75px;
-            color: white;
-        }
-        &__row{
-            display: flex;
-            flex-direction: row;
-            width: 190px;
-            height: 19px;
-            gap: 11px;
-            & #fork-knife{
-                width: 11px;
-                height: 13px;
-            }
-            & #hand{
-                width: 11.92px;
-                height: 13px;
-            }
-            & span{
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 18.75px;
-            }
-        }
+    &__row {
+      display: flex;
+      flex-direction: row;
+      width: 190px;
+      height: 19px;
+      gap: 11px;
+      /* Icon sizes */
+      & #fork-knife {
+        width: 11px;
+        height: 13px;
+      }
+      & #hand {
+        width: 11.92px;
+        height: 13px;
+      }
+      /* Different fonts > text without icon */
+      & span {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+      }
     }
+  }
 }

@@ -1,27 +1,28 @@
-@mixin button_linear-gardien{
-    background: linear-gradient(var(--secondary-color) ,var(--primary-color));
-    box-shadow:0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    border:none;
-    border-radius: 24px ;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18.75px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    &:hover{
-        animation: button_linear-gardien 300ms ease-out forwards;
+/****** Button linear-gradient settings ******/
+@mixin button_linear-gardien {
+  background: linear-gradient(var(--secondary-color), var(--primary-color));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 24px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  /* Hover animation */
+  &:hover {
+    animation: button_linear-gardien 300ms ease-out forwards;
+  }
+  @keyframes button_linear-gardien {
+    0% {
     }
-    @keyframes button_linear-gardien{
-        0%{
-        
-        }
-        100%{
-            box-shadow:0px 4px 15px 0px rgba(0, 0, 0, .35);
-            opacity: 0.85; 
-        }
+    100% {
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+      opacity: 0.85;
     }
+  }
 }
