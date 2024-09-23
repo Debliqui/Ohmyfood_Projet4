@@ -1,23 +1,25 @@
-@mixin like__setting{  
-    .heart {
-        transition: fill 0.3s;
-        & path{
-            stroke: #101010;
-        }
+/****** Animation like button ******/
+@mixin like__setting {
+  .heart {
+    transition: fill 0.3s;
+    & path {
+      stroke: #101010;
     }
-    .icone-heart{
-        display: inline-block;
-        cursor: pointer;
-        user-select: none;
-        & input{
-            display: none;
-        }
-        & input:checked + .heart{
-            fill: url(#grad1);
-            stroke: none;
-            & path{
-                stroke: none;
-            }
-        }
+  }
+  .icone-heart {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    & input {
+      /* disappearance of the input square */
+      display: none;
     }
+    /* action onclick */
+    & input:checked + .heart {
+      fill: url(#grad1); /* id:"grad1 > linear-gradient" */
+      & path {
+        stroke: none;
+      }
+    }
+  }
 }
