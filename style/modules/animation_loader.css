@@ -87,6 +87,7 @@
 .animation__progress {
   width: 225px;
   height: 10px;
+  border-radius: 20px;
   background: linear-gradient(90deg, #99e2d0, #89c8fa, #003a68);
   opacity: 0;
   transform-origin: left;
@@ -119,12 +120,14 @@
 }
 /******* Start Home content ********/
 .homepage {
-  scale: 0;
   animation: home-content 10ms 3000ms both;
 }
 @keyframes home-content {
   /* Animation home content > appearance after Start Loader */
+  0% {
+    transform: scaleX(0);
+  }
   100% {
-    scale: 1;
+    transform: scaleX(1);
   }
 }/*# sourceMappingURL=animation_loader.css.map */
