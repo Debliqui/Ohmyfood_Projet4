@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/****** Style menupages ******/
+/* Import button_linear-gradient and likes modules */
+/****** Button linear-gradient settings ******/
+/****** Animation like button ******/
+/* Settings > Animation display-card */
+/* Settings > Animation display-content */
+/****** Introducer image ******/
 .image_introduction {
   width: 100%;
   height: 275px;
@@ -8,6 +16,7 @@
   height: 100%;
 }
 
+/****** Section Menu list ******/
 .menu {
   position: relative;
   margin-top: -40px;
@@ -16,6 +25,7 @@
   background-color: var(--background-secondry);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+  /* Settings cards*/
 }
 .menu__container {
   padding: 28px 0 40px 0;
@@ -23,6 +33,7 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  /* Button linear-gradient */
 }
 .menu__container__title {
   width: 341px;
@@ -30,6 +41,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* Button Like */
 }
 .menu__container__title h2 {
   font-family: var(--header-font);
@@ -42,6 +54,7 @@
   height: 21px;
   padding-right: 24px;
   padding-top: 8px;
+  /* Include mixin > likes.scss*/
 }
 .menu__container__title .like .heart {
   transition: fill 0.3s;
@@ -53,13 +66,14 @@
   display: inline-block;
   cursor: pointer;
   user-select: none;
+  /* action onclick */
 }
 .menu__container__title .like .icone-heart input {
+  /* disappearance of the input square */
   display: none;
 }
 .menu__container__title .like .icone-heart input:checked + .heart {
-  fill: url(#grad1);
-  stroke: none;
+  fill: url(#grad1); /* id:"grad1 > linear-gradient" */
 }
 .menu__container__title .like .icone-heart input:checked + .heart path {
   stroke: none;
@@ -67,6 +81,7 @@
 .menu__container .button {
   width: 186px;
   height: 50px;
+  /* Include mixin > button_linear-gardien.scss */
   background: linear-gradient(var(--secondary-color), var(--primary-color));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: none;
@@ -80,6 +95,7 @@
   justify-content: center;
   align-items: center;
   opacity: 1;
+  /* Hover animation */
 }
 .menu__container .button:hover {
   animation: button_linear-gardien 300ms ease-out forwards;
@@ -96,9 +112,11 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  /* Animation > display content  "Entrées" "Plats" "Desserts" */
   animation: display-content 3000ms cubic-bezier(0.17, 0.84, 0.44, 1) both;
 }
 .menu__content__title {
+  /* Title > "Entrées" "Plats" "Desserts" */
   border-bottom: 3px solid var(--tertiary-color);
   width: 40px;
   height: 24px;
@@ -126,7 +144,12 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  /* Animation > display-card 1 by 1 appearance */
   animation: display-card 2000ms ease both;
+  /* Number automation > card__row--# */
+  /* Left block > Name and description */
+  /* Right block > Price and hidden check block */
+  /* Move to the left to reduce the left block */
 }
 .menu .card__row--1 {
   animation-delay: 200ms;
@@ -165,6 +188,8 @@
   overflow: hidden;
   white-space: nowrap;
   padding-left: 15px;
+  /* Name */
+  /* Description */
 }
 .menu .card__row__left h4 {
   font-size: 18px;
@@ -184,6 +209,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  /* Settings button check*/
+  /* Price settings*/
+  /* Settings check block*/
+  /* action onclick */
 }
 .menu .card__row__right.checkButton {
   display: inline-block;
@@ -192,7 +221,7 @@
   user-select: none;
 }
 .menu .card__row__right input {
-  display: none;
+  display: none; /* disappearance of the input square */
 }
 .menu .card__row__right__button {
   height: 42px;
@@ -200,7 +229,8 @@
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  margin-right: -59px;
+  margin-right: -59px; /* margin-right to make it disappear check block*/
+  /* Animation > reveal check block and move to the left to reduce the left block */
   transition: margin-left 300ms, translate 300ms;
 }
 .menu .card__row__right span {
@@ -220,6 +250,7 @@
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   display: flex;
+  /* Icon check*/
 }
 .menu .card__row__right .check i {
   color: white;
