@@ -55,7 +55,7 @@ $anim-dur-block: 3000ms;
       width: 1055px;
     }
     &__title {
-      width: 341px;
+      width: 370px;
       height: 29px;
       display: flex;
       flex-direction: row;
@@ -92,23 +92,23 @@ $anim-dur-block: 3000ms;
     }
   }
   &__content {
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 12px;
     overflow: hidden;
     /* Animation > display content  "Entrées" "Plats" "Desserts" */
     animation: display-content $anim-dur-block cubic-bezier(0.17, 0.84, 0.44, 1)
       both;
       @media screen and (min-width: 768px) {
-        width: 634px;
+        width: 664px;
       }
     &__title {
       /* Title > "Entrées" "Plats" "Desserts" */
       border-bottom: 3px solid var(--tertiary-color);
       width: 40px;
       height: 24px;
+      margin: 0 0 12px 15px;
       & h3 {
         font-size: 16px;
         font-weight: 300;
@@ -135,6 +135,7 @@ $anim-dur-block: 3000ms;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    margin: 0 15px 12px 15px;
     /* Animation > display-card 1 by 1 appearance */
     animation: display-card $anim-dur-cards ease both;
     /* Number automation > card__row--# */

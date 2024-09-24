@@ -60,7 +60,7 @@
   }
 }
 .menu__container__title {
-  width: 341px;
+  width: 370px;
   height: 29px;
   display: flex;
   flex-direction: row;
@@ -142,18 +142,17 @@
   }
 }
 .menu__content {
-  width: 90%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
   overflow: hidden;
   /* Animation > display content  "Entrées" "Plats" "Desserts" */
   animation: display-content 3000ms cubic-bezier(0.17, 0.84, 0.44, 1) both;
 }
 @media screen and (min-width: 768px) {
   .menu__content {
-    width: 634px;
+    width: 664px;
   }
 }
 .menu__content__title {
@@ -161,6 +160,7 @@
   border-bottom: 3px solid var(--tertiary-color);
   width: 40px;
   height: 24px;
+  margin: 0 0 12px 15px;
 }
 .menu__content__title h3 {
   font-size: 16px;
@@ -185,6 +185,7 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  margin: 0 15px 12px 15px;
   /* Animation > display-card 1 by 1 appearance */
   animation: display-card 2000ms ease both;
   /* Number automation > card__row--# */
