@@ -16,6 +16,9 @@ $anim-dur-block: 3000ms;
 .image_introduction {
   width: 100%;
   height: 275px;
+  @media screen and (min-width: 1024px) {
+    height: 383px;
+  }
   & img {
     object-fit: cover;
     width: 100%;
@@ -26,25 +29,41 @@ $anim-dur-block: 3000ms;
 /****** Section Menu list ******/
 .menu {
   position: relative;
-  margin-top: -40px;
   width: 100%;
   z-index: 1;
-  background-color: var(--background-secondry);
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-
+  @media screen and (min-width: 1024px) {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   &__container {
+    margin-top: -40px;
     padding: 28px 0 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    background-color: var(--background-secondry);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    @media screen and (min-width: 1024px) {
+      width: 1024px;
+      height: 100%;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 1055px;
+    }
     &__title {
       width: 341px;
       height: 29px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      @media screen and (min-width: 1024px) {
+        width: 307px;
+        height: 41px;
+      }
       & h2 {
         font-family: var(--header-font);
         font-size: 28px;
@@ -59,6 +78,9 @@ $anim-dur-block: 3000ms;
         padding-top: 8px;
         /* Include mixin > likes.scss*/
         @include like__setting;
+        @media screen and (min-width: 1024px) {
+          padding-right: 0;
+        }
       }
     }
     /* Button linear-gradient */
@@ -75,10 +97,13 @@ $anim-dur-block: 3000ms;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    overflow: hidden;
     /* Animation > display content  "Entrées" "Plats" "Desserts" */
     animation: display-content $anim-dur-block cubic-bezier(0.17, 0.84, 0.44, 1)
       both;
-
+      @media screen and (min-width: 768px) {
+        width: 634px;
+      }
     &__title {
       /* Title > "Entrées" "Plats" "Desserts" */
       border-bottom: 3px solid var(--tertiary-color);
