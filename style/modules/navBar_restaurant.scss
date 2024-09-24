@@ -1,4 +1,4 @@
-/****** NavBar Menu ******/
+// ****** NavBar Menu ******
 .navBar_restaurant {
   width: 100%;
   height: 63px;
@@ -15,8 +15,8 @@
     @media screen and (min-width: 1024px) {
       height: 96px;
     }
-    /* Icon go_back > link homepage */
-    & .go_back {
+    // Icon go_back > link homepage
+    .go_back {
       position: absolute;
       top: 17px;
       left: 17px;
@@ -29,7 +29,7 @@
         top: 33px;
       }
     }
-    &.logo {
+    .logo {
       height: 30px;
       @media screen and (min-width: 1024px) {
         height: 34px;

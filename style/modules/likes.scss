@@ -1,8 +1,8 @@
-/****** Animation like button ******/
+//****** Animation like button ******
 @mixin like__setting {
   .heart {
     transition: fill 0.3s;
-    & path {
+    path {
       stroke: #101010;
     }
   }
@@ -10,14 +10,13 @@
     display: inline-block;
     cursor: pointer;
     user-select: none;
-    & input {
-      /* disappearance of the input square */
-      display: none;
+    input {
+      display: none; // disappearance of the input square
     }
-    /* action onclick */
-    & input:checked + .heart {
-      fill: url(#grad1); /* id:"grad1 > linear-gradient" */
-      & path {
+    // action onclick
+    input:checked + .heart {
+      fill: url(#grad1); // id:"grad1 > linear-gradient"
+      path {
         stroke: none;
       }
     }

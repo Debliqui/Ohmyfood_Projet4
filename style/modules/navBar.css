@@ -1,8 +1,5 @@
-/****** NavBar homepage ******/
 .navBar {
   width: 100%;
-  /* Top > Logo "Ohmyfood" */
-  /* Bottom > location */
 }
 .navBar__container {
   display: flex;

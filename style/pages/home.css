@@ -1,8 +1,3 @@
-/****** Style homepage ******/
-/* Import button_linear-gradient and likes modules */
-/****** Button linear-gradient settings ******/
-/****** Animation like button ******/
-/****** Introduction ******/
 .introduction {
   width: 100%;
   display: flex;
@@ -20,9 +15,6 @@
   margin-top: 42px;
   padding-bottom: 52px;
   overflow: hidden;
-  /*  Title */
-  /*  Catchphrase */
-  /* Button linear-gradient */
 }
 @media screen and (min-width: 768px) {
   .introduction__container {
@@ -53,7 +45,6 @@
 .introduction__container .button {
   width: 218px;
   height: 50px;
-  /* Include mixin > button_linear-gardien.scss */
   background: linear-gradient(var(--secondary-color), var(--primary-color));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: none;
@@ -67,7 +58,6 @@
   justify-content: center;
   align-items: center;
   opacity: 1;
-  /* Hover animation */
 }
 .introduction__container .button:hover {
   animation: button_linear-gardien 300ms ease-out forwards;
@@ -79,7 +69,6 @@
   }
 }
 
-/****** Fonctionnement ******/
 .fonctionnement {
   width: 100%;
   height: 100%;
@@ -96,8 +85,6 @@
 }
 .fonctionnement__container {
   width: 375px;
-  /* Operating lists */
-  /* icon size */
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement__container {
@@ -124,7 +111,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* Operating block*/
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement__container__list {
@@ -145,8 +131,6 @@
   border-radius: 20px;
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  /* Step number */
-  /* Step descrition */
 }
 .fonctionnement__container__list__etapes span {
   display: flex;
@@ -180,7 +164,6 @@
   height: 18px;
 }
 
-/****** Restaurants ******/
 .restaurant {
   display: flex;
   flex-direction: column;
@@ -189,10 +172,6 @@
 
 .list-restaurant {
   margin: 54px 0 66px 0;
-  /* Title */
-  /* Cards container */
-  /* Button Like */
-  /* Card content*/
 }
 @media screen and (min-width: 1024px) {
   .list-restaurant {
@@ -246,7 +225,6 @@
   padding-top: 7px;
   width: 22px;
   height: 21px;
-  /* Include mixin > likes.scss*/
 }
 .list-restaurant .like .heart {
   transition: fill 0.3s;
@@ -258,14 +236,12 @@
   display: inline-block;
   cursor: pointer;
   user-select: none;
-  /* action onclick */
 }
 .list-restaurant .like .icone-heart input {
-  /* disappearance of the input square */
   display: none;
 }
 .list-restaurant .like .icone-heart input:checked + .heart {
-  fill: url(#grad1); /* id:"grad1 > linear-gradient" */
+  fill: url(#grad1);
 }
 .list-restaurant .like .icone-heart input:checked + .heart path {
   stroke: none;
@@ -277,8 +253,6 @@
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  /* Restaurant picture */
-  /* Bottom information block */
 }
 .list-restaurant .card__image {
   width: 340px;
@@ -304,7 +278,6 @@
   align-items: flex-start;
   box-sizing: border-box;
   gap: 5px;
-  /* Green badge new */
 }
 .list-restaurant .card__container .badge_nouveau {
   position: absolute;
@@ -319,16 +292,12 @@
   align-items: center;
   border-radius: 2px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  /* Text "Nouveau" */
 }
 .list-restaurant .card__container .badge_nouveau span {
   font-size: 14px;
   font-weight: 500;
   line-height: 16.41px;
   color: #008766;
-}
-.list-restaurant .card__content {
-  /* Location */
 }
 .list-restaurant .card__content p {
   font-size: 17px;

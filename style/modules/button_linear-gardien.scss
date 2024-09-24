@@ -1,4 +1,4 @@
-/****** Button linear-gradient settings ******/
+// ****** Button linear-gradient settings ******
 @mixin button_linear-gardien {
   background: linear-gradient(var(--secondary-color), var(--primary-color));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   opacity: 1;
-  /* Hover animation */
+  // Hover animation
   &:hover {
     animation: button_linear-gardien 300ms ease-out forwards;
   }
