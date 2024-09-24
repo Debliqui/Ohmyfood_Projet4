@@ -1,10 +1,9 @@
-/****** Style homepage ******/
+//****** Style homepage ******
 
-/* Import button_linear-gradient and likes modules */
 @import "../modules/button_linear-gardien.scss";
 @import "../modules/likes.scss";
 
-/****** Introduction ******/
+//****** Introduction ******
 .introduction {
   width: 100%;
   display: flex;
@@ -26,8 +25,8 @@
       padding-bottom: 30px;
       gap: 18px;
     }
-    /*  Title */
-    & h2 {
+    // Title
+    h2 {
       @media screen and (min-width: 1024px) {
         font-size: 40px;
         height: 47px;
@@ -35,8 +34,8 @@
         align-items: center;
       }
     }
-    /*  Catchphrase */
-    & p {
+    // Catchphrase
+    p {
       font-weight: 300;
       @media screen and (min-width: 1024px) {
         font-size: 18px;
@@ -45,17 +44,16 @@
         align-items: center;
       }
     }
-    /* Button linear-gradient */
-    & .button {
+    // Button linear-gradient
+    .button {
       width: 218px;
       height: 50px;
-      /* Include mixin > button_linear-gardien.scss */
       @include button_linear-gardien;
     }
   }
 }
 
-/****** Fonctionnement ******/
+//****** Fonctionnement ******
 .fonctionnement {
   width: 100%;
   height: 100%;
@@ -76,14 +74,14 @@
       width: 1053px;
       margin-right: 27px;
     }
-    & h2 {
+    h2 {
       padding-left: 20px;
       margin-bottom: 26px;
       @media screen and (min-width: 1024px) {
         padding-left: 0;
       }
     }
-    /* Operating lists */
+    // Operating lists
     &__list {
       padding-left: 33px;
       display: flex;
@@ -95,7 +93,7 @@
         padding-left: 12px;
         gap: 36px;
       }
-      /* Operating block*/
+      // Operating block
       &__etapes {
         width: 290px;
         display: flex;
@@ -107,8 +105,8 @@
         border-radius: 20px;
         background-color: #f6f6f6;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-        /* Step number */
-        & span {
+        // Step number
+        span {
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -123,14 +121,14 @@
           border-radius: 20px;
           margin-left: -44px;
         }
-        /* Step descrition */
-        & p {
+        // Step descrition
+        p {
           font-weight: 500;
           line-height: 18.75px;
         }
       }
     }
-    /* icon size */
+    // icon size
     #n1 {
       width: 13px;
       height: 20px;
@@ -146,7 +144,7 @@
   }
 }
 
-/****** Restaurants ******/
+//****** Restaurants ******
 .restaurant {
   display: flex;
   flex-direction: column;
@@ -161,14 +159,14 @@
   @media screen and (min-width: 1440px) {
     width: 1080px;
   }
-  /* Title */
+  // Title
   &__title {
     padding-bottom: 18px;
     @media screen and (min-width: 1024px) {
       padding-left: 0;
     }
   }
-  /* Cards container */
+  // Cards container
   &__cards {
     display: flex;
     flex-direction: column;
@@ -194,16 +192,15 @@
       }
     }
   }
-  /* Button Like */
+  // Button Like
   .like {
     padding-top: 7px;
     width: 22px;
     height: 21px;
-    /* Include mixin > likes.scss*/
     @include like__setting;
   }
 
-  /* Card content*/
+  // Card content
   .card {
     height: 251px;
     display: flex;
@@ -211,7 +208,7 @@
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-    /* Restaurant picture */
+    // Restaurant picture
     &__image {
       width: 340px;
       height: 80%;
@@ -224,7 +221,7 @@
         width: 490px;
       }
     }
-    /* Bottom information block */
+    // Bottom information block
     &__container {
       width: 100%;
       position: relative;
@@ -235,8 +232,8 @@
       align-items: flex-start;
       box-sizing: border-box;
       gap: 5px;
-      /* Green badge new */
-      & .badge_nouveau {
+      // Green badge new
+      .badge_nouveau {
         position: absolute;
         right: 13px;
         bottom: 209px;
@@ -249,8 +246,8 @@
         align-items: center;
         border-radius: 2px;
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-        /* Text "Nouveau" */
-        & span {
+        // Text badge
+        span {
           font-size: 14px;
           font-weight: 500;
           line-height: 16.41px;
@@ -259,8 +256,8 @@
       }
     }
     &__content {
-      /* Location */
-      & p {
+      // Location
+      p {
         font-size: 17px;
         font-weight: 300;
         line-height: 19.92px;

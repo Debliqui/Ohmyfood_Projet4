@@ -1,4 +1,4 @@
-/****** Footer homepage and menupages ******/
+// ****** Footer homepage and menupages ******
 .footer__container {
   display: flex;
   flex-direction: column;
@@ -11,8 +11,8 @@
     align-items: end;
     padding: 0 25px 30px 25px;
   }
-  /* Logo "Ohmyfood"*/
-  & h3 {
+  // Logo "Ohmyfood"
+  h3 {
     color: white;
     width: 139px;
     height: 27px;
@@ -21,7 +21,7 @@
     font-weight: 400;
     line-height: 26.24px;
   }
-  /* Link list */
+  // Link list
   &__list {
     width: 190px;
     height: 99px;
@@ -35,12 +35,12 @@
       flex-direction: row;
       justify-content: flex-end;
     }
-    & > a:nth-child(4),
+    > a:nth-child(4),
     a:nth-child(3) {
       width: 130px;
     }
-    /* Link */
-    & a {
+    // Link
+    a {
       font-size: 16px;
       font-weight: 400;
       line-height: 18.75px;
@@ -52,17 +52,17 @@
       width: 190px;
       height: 19px;
       gap: 11px;
-      /* Icon sizes */
-      & #fork-knife {
+      // Icon sizes
+      #fork-knife {
         width: 11px;
         height: 13px;
       }
-      & #hand {
+      #hand {
         width: 11.92px;
         height: 13px;
       }
-      /* Different fonts > text without icon */
-      & span {
+      // Different fonts > text without icon
+      span {
         font-size: 16px;
         font-weight: 500;
         line-height: 18.75px;

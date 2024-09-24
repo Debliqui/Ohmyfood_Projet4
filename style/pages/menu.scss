@@ -1,32 +1,31 @@
-/****** Style menupages ******/
+// ****** Style menupages ******
 
-/* Import button_linear-gradient and likes modules */
 @import "../modules/button_linear-gardien.scss";
 @import "../modules/likes.scss";
 
-/* Settings > Animation display-card */
+// Settings > Animation display-card
 $anim-dur-cards: 2000ms;
 $num-cards: 10;
 $anim-delay-cards: $anim-dur-cards / $num-cards;
 
-/* Settings > Animation display-content */
+// Settings > Animation display-content
 $anim-dur-block: 3000ms;
 
-/****** Introducer image ******/
+// ****** Introducer image ******
 .image_introduction {
   width: 100%;
   height: 275px;
   @media screen and (min-width: 1024px) {
     height: 383px;
   }
-  & img {
+  img {
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
 }
 
-/****** Section Menu list ******/
+// ****** Section Menu list ******
 .menu {
   position: relative;
   width: 100%;
@@ -64,30 +63,28 @@ $anim-dur-block: 3000ms;
         width: 307px;
         height: 41px;
       }
-      & h2 {
+      h2 {
         font-family: var(--header-font);
         font-size: 28px;
         font-weight: var(--header-weight);
         line-height: 40.82px;
       }
-      /* Button Like */
-      & .like {
+      // Button Like
+      .like {
         width: 22px;
         height: 21px;
         padding-right: 24px;
         padding-top: 8px;
-        /* Include mixin > likes.scss*/
         @include like__setting;
         @media screen and (min-width: 1024px) {
           padding-right: 0;
         }
       }
     }
-    /* Button linear-gradient */
-    & .button {
+    // Button linear-gradient
+    .button {
       width: 186px;
       height: 50px;
-      /* Include mixin > button_linear-gardien.scss */
       @include button_linear-gardien;
     }
   }
@@ -97,19 +94,19 @@ $anim-dur-block: 3000ms;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    /* Animation > display content  "Entrées" "Plats" "Desserts" */
+    // Animation > display content  "Entrées" "Plats" "Desserts"
     animation: display-content $anim-dur-block cubic-bezier(0.17, 0.84, 0.44, 1)
       both;
       @media screen and (min-width: 768px) {
         width: 664px;
       }
     &__title {
-      /* Title > "Entrées" "Plats" "Desserts" */
+      // Title > "Entrées" "Plats" "Desserts"
       border-bottom: 3px solid var(--tertiary-color);
       width: 40px;
       height: 24px;
       margin: 0 0 12px 15px;
-      & h3 {
+      h3 {
         font-size: 16px;
         font-weight: 300;
         line-height: 18.75px;
@@ -124,7 +121,7 @@ $anim-dur-block: 3000ms;
       }
     }
   }
-  /* Settings cards*/
+  // Settings cards
   .card__row {
     height: 69px;
     border-radius: 15px;
@@ -136,15 +133,15 @@ $anim-dur-block: 3000ms;
     align-items: center;
     overflow: hidden;
     margin: 0 15px 12px 15px;
-    /* Animation > display-card 1 by 1 appearance */
+    // Animation > display-card 1 by 1 appearance
     animation: display-card $anim-dur-cards ease both;
-    /* Number automation > card__row--# */
+    // Number automation > card__row--# 
     @for $i from 1 through $num-cards {
       &--#{$i} {
         animation-delay: $anim-delay-cards * $i;
       }
     }
-    /* Left block > Name and description */
+    // Left block > Name and description
     &__left {
       display: flex;
       flex-direction: column;
@@ -152,16 +149,16 @@ $anim-dur-block: 3000ms;
       overflow: hidden;
       white-space: nowrap;
       padding-left: 15px;
-      /* Name */
-      & h4 {
+      // Name
+      h4 {
         font-size: 18px;
         font-weight: 500;
         line-height: 21.09px;
         overflow: hidden;
         text-overflow: ellipsis;
       }
-      /* Description */
-      & p {
+      // Description
+      p {
         font-size: 15.04px;
         font-weight: 300;
         line-height: 17.63px;
@@ -169,20 +166,19 @@ $anim-dur-block: 3000ms;
         text-overflow: ellipsis;
       }
     }
-    /* Right block > Price and hidden check block */
+    // Right block > Price and hidden check block
     &__right {
       display: flex;
       flex-direction: row;
       align-items: center;
-      /* Settings button check*/
-      &.checkButton {
+      // Settings button check
+      .checkButton {
         display: inline-block;
         cursor: pointer;
-        padding: 10px;
         user-select: none;
       }
-      & input {
-        display: none; /* disappearance of the input square */
+      input {
+        display: none; // disappearance of the input square
       }
       &__button {
         height: 42px;
@@ -190,12 +186,11 @@ $anim-dur-block: 3000ms;
         flex-direction: row;
         align-items: center;
         cursor: pointer;
-        margin-right: -59px; /* margin-right to make it disappear check block*/
-        /* Animation > reveal check block and move to the left to reduce the left block */
-        transition: margin-left 300ms, translate 300ms;
+        margin-right: -59px; // margin-right to make it disappear check block
+        transition: margin-left 300ms, translate 300ms; // Animation > reveal check block and move to the left to reduce the left block
       }
-      /* Price settings*/
-      & span {
+      // Price settings
+      span {
         font-size: 15.04px;
         font-weight: 700;
         line-height: 17.63px;
@@ -205,27 +200,27 @@ $anim-dur-block: 3000ms;
         align-items: end;
         padding-right: 15px;
       }
-      /* Settings check block*/
-      & .check {
+      // Settings check block
+      .check {
         width: 59px;
         height: 69px;
         background-color: #99e2d0;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         display: flex;
-        /* Icon check*/
-        & i {
+        // Icon check
+        i {
           color: white;
           margin: auto;
         }
       }
-      /* action onclick */
+      // action onclick
       .checkButton input:checked + .card__row__right__button {
         translate: -59px;
         margin-left: 59px;
       }
     }
-    /* Move to the left to reduce the left block */
+    // Move to the left to reduce the left block
     @keyframes display-card {
       0% {
         transform: translateX(-110%);
