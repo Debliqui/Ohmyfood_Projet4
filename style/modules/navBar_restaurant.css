@@ -5,7 +5,7 @@
 }
 .navBar_restaurant__container {
   width: 100%;
-  height: 63px;
+  height: 100%;
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -14,6 +14,11 @@
   position: relative;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   /* Icon go_back > link homepage */
+}
+@media screen and (min-width: 1024px) {
+  .navBar_restaurant__container {
+    height: 96px;
+  }
 }
 .navBar_restaurant__container .go_back {
   position: absolute;
@@ -25,6 +30,16 @@
   align-items: center;
   justify-content: center;
 }
-.navBar_restaurant__container h1 {
-  font-size: 30px;
+@media screen and (min-width: 1024px) {
+  .navBar_restaurant__container .go_back {
+    top: 33px;
+  }
+}
+.navBar_restaurant__container.logo {
+  height: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .navBar_restaurant__container.logo {
+    height: 34px;
+  }
 }/*# sourceMappingURL=navBar_restaurant.css.map */
