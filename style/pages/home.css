@@ -17,14 +17,38 @@
   align-items: center;
   text-align: center;
   gap: 30px;
-  margin: 42px 0 12px 0;
-  padding-bottom: 30px;
+  margin-top: 42px;
+  padding-bottom: 52px;
   overflow: hidden;
-  /*  catchphrase */
+  /*  Title */
+  /*  Catchphrase */
   /* Button linear-gradient */
+}
+@media screen and (min-width: 768px) {
+  .introduction__container {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    gap: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .introduction__container h2 {
+    font-size: 40px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+  }
 }
 .introduction__container p {
   font-weight: 300;
+}
+@media screen and (min-width: 1024px) {
+  .introduction__container p {
+    font-size: 18px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+  }
 }
 .introduction__container .button {
   width: 218px;
@@ -56,43 +80,75 @@
 }
 
 /****** Fonctionnement ******/
-.fonctionnement__container {
+.fonctionnement {
   width: 100%;
-  height: 440px;
+  height: 100%;
+  padding: 50px 0 70px 0;
   background-color: #ffffff;
-  /* Title */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement {
+    padding: 50px 0;
+  }
+}
+.fonctionnement__container {
+  width: 375px;
   /* Operating lists */
   /* icon size */
 }
+@media screen and (min-width: 1024px) {
+  .fonctionnement__container {
+    width: 1024px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .fonctionnement__container {
+    width: 1053px;
+    margin-right: 27px;
+  }
+}
 .fonctionnement__container h2 {
-  padding: 48px 0 0 20px;
+  padding-left: 20px;
+  margin-bottom: 26px;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement__container h2 {
+    padding-left: 0;
+  }
 }
 .fonctionnement__container__list {
   padding-left: 33px;
-  padding-top: 26px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   /* Operating block*/
 }
+@media screen and (min-width: 1024px) {
+  .fonctionnement__container__list {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 12px;
+    gap: 36px;
+  }
+}
 .fonctionnement__container__list__etapes {
+  width: 290px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
   height: 72px;
+  padding-left: 33px;
   gap: 20px;
-  padding-left: 34px;
-  margin-right: 20px;
   border-radius: 20px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   /* Step number */
   /* Step descrition */
 }
 .fonctionnement__container__list__etapes span {
-  position: absolute;
-  left: 22px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -105,6 +161,7 @@
   color: white;
   background-color: var(--primary-color);
   border-radius: 20px;
+  margin-left: -44px;
 }
 .fonctionnement__container__list__etapes p {
   font-weight: 500;
@@ -124,21 +181,69 @@
 }
 
 /****** Restaurants ******/
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .list-restaurant {
   margin: 54px 0 66px 0;
+  /* Title */
   /* Cards container */
   /* Button Like */
   /* Card content*/
+}
+@media screen and (min-width: 1024px) {
+  .list-restaurant {
+    width: 1024px;
+    margin: 30px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .list-restaurant {
+    width: 1080px;
+  }
+}
+.list-restaurant__title {
+  padding-bottom: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .list-restaurant__title {
+    padding-left: 0;
+  }
 }
 .list-restaurant__cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20px;
   gap: 18px;
-  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .list-restaurant__cards {
+    justify-content: space-evenly;
+    padding: 0;
+    gap: 50px;
+  }
+}
+.list-restaurant__cards__top, .list-restaurant__cards__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .list-restaurant__cards__top, .list-restaurant__cards__bottom {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .list-restaurant__cards__top, .list-restaurant__cards__bottom {
+    gap: 100px;
+  }
 }
 .list-restaurant .like {
+  padding-top: 7px;
   width: 22px;
   height: 21px;
   /* Include mixin > likes.scss*/
@@ -166,7 +271,6 @@
   stroke: none;
 }
 .list-restaurant .card {
-  width: 90%;
   height: 251px;
   display: flex;
   flex-direction: column;
@@ -177,13 +281,18 @@
   /* Bottom information block */
 }
 .list-restaurant .card__image {
-  width: 100%;
+  width: 340px;
   height: 80%;
   object-fit: cover;
   object-position: center;
   overflow: hidden;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .list-restaurant .card__image {
+    width: 490px;
+  }
 }
 .list-restaurant .card__container {
   width: 100%;
