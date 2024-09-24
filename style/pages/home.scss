@@ -104,7 +104,7 @@
         gap: 20px;
         border-radius: 20px;
         background-color: #f6f6f6;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
         // Step number
         span {
           display: flex;
@@ -207,7 +207,7 @@
     flex-direction: column;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
     // Restaurant picture
     &__image {
       width: 340px;
@@ -245,7 +245,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 2px;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
         // Text badge
         span {
           font-size: 14px;
