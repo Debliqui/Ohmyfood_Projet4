@@ -47,7 +47,7 @@ a {
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: var(--body-font) sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15.04px;
@@ -57,7 +57,7 @@ body {
 }
 
 h1 {
-  font-family: var(--header-font);
+  font-family: var(--header-font) sans-serif;
   font-style: normal;
   font-weight: var(--header-weight);
   font-size: var(--header-size);
@@ -66,7 +66,7 @@ h1 {
 }
 
 h2 {
-  font-family: var(--title-font);
+  font-family: var(--title-font) sans-serif;
   font-style: normal;
   font-weight: var(--title-weight);
   font-size: var(--title-size);
@@ -75,7 +75,7 @@ h2 {
 }
 
 h3 {
-  font-family: var(--title-font);
+  font-family: var(--title-font) sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -84,7 +84,7 @@ h3 {
 }
 
 p {
-  font-family: var(--body-font);
+  font-family: var(--body-font) sans-serif;
   font-style: normal;
   font-weight: var(--body-weight);
   font-size: var(--body-size);
@@ -92,7 +92,7 @@ p {
   color: var(--black);
 }
 
-/* hidden text > better accessibility */
+/* Hide an element to all devices except screen readers */
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
