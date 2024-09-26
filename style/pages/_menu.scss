@@ -65,7 +65,7 @@ $anim-dur-block: 3000ms;
       }
       h2 {
         font-family: var(--header-font);
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: var(--header-weight);
         line-height: 40.82px;
       }
@@ -107,7 +107,7 @@ $anim-dur-block: 3000ms;
       height: 24px;
       margin: 0 0 12px 15px;
       h3 {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 300;
         line-height: 18.75px;
       }
@@ -151,7 +151,7 @@ $anim-dur-block: 3000ms;
       padding-left: 15px;
       // Name
       h4 {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 500;
         line-height: 21.09px;
         overflow: hidden;
@@ -159,7 +159,7 @@ $anim-dur-block: 3000ms;
       }
       // Description
       p {
-        font-size: 15.04px;
+        font-size: 0.94rem;
         font-weight: 300;
         line-height: 17.63px;
         overflow: hidden;
@@ -191,7 +191,7 @@ $anim-dur-block: 3000ms;
       }
       // Price settings
       span {
-        font-size: 15.04px;
+        font-size: 0.94rem;
         font-weight: 700;
         line-height: 17.63px;
         height: 42px;
@@ -199,6 +199,8 @@ $anim-dur-block: 3000ms;
         flex-direction: row;
         align-items: end;
         padding-right: 15px;
+        color: #353535;
+
       }
       // Settings check block
       .check {
