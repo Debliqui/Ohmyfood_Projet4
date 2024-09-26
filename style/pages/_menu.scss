@@ -15,9 +15,11 @@ $anim-dur-block: 3000ms;
 .image_introduction {
   width: 100%;
   height: 275px;
+  @media screen and (min-width: 768px) {
+    height: 383px;
+  }
   @media screen and (min-width: 1024px) {
     margin-top: 33px; // alignment with navBar
-    height: 383px;
   }
   img {
     object-fit: cover;
@@ -38,7 +40,7 @@ $anim-dur-block: 3000ms;
     justify-content: center;
   }
   &__container {
-    margin-top: -40px;
+    margin-top: -50px;
     padding: 28px 0 40px 0;
     display: flex;
     flex-direction: column;
@@ -47,9 +49,14 @@ $anim-dur-block: 3000ms;
     background-color: var(--background-secondry);
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    @media screen and (min-width: 678px) {
+      margin-top: -40px;
+      padding-top: 40px;
+      height: 100%;
+    }
     @media screen and (min-width: 1024px) {
       width: 1024px;
-      height: 100%;
+      
     }
     @media screen and (min-width: 1440px) {
       width: 1055px;
@@ -91,6 +98,7 @@ $anim-dur-block: 3000ms;
   }
   &__content {
     width: 100%;
+    max-width: 664px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -98,9 +106,6 @@ $anim-dur-block: 3000ms;
     // Animation > display content  "Entrées" "Plats" "Desserts"
     animation: display-content $anim-dur-block cubic-bezier(0.17, 0.84, 0.44, 1)
       both;
-      @media screen and (min-width: 768px) {
-        width: 664px;
-      }
     &__title {
       // Title > "Entrées" "Plats" "Desserts"
       border-bottom: 3px solid var(--tertiary-color);
@@ -136,7 +141,7 @@ $anim-dur-block: 3000ms;
     margin: 0 15px 12px 15px;
     // Animation > display-card 1 by 1 appearance
     animation: display-card $anim-dur-cards ease both;
-    // Number automation > card__row--# 
+    // Number automation > card__row--#
     @for $i from 1 through $num-cards {
       &--#{$i} {
         animation-delay: $anim-delay-cards * $i;
@@ -201,7 +206,6 @@ $anim-dur-block: 3000ms;
         align-items: end;
         padding-right: 15px;
         color: #353535;
-
       }
       // Settings check block
       .check {
