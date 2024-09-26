@@ -74,7 +74,7 @@ $prog-bar-delay: 200ms;
   width: 225px;
   height: 10px;
   border-radius: 20px;
-  background: linear-gradient(90deg, #99e2d0, #89c8fa, #003a68);
+  background: linear-gradient(90deg, var(--tertiary-color), #89c8fa, #003a68);
   opacity: 0;
   transform-origin: left;
   transform: scaleX(0);
