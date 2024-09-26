@@ -2,7 +2,7 @@
 .footer__container {
   display: flex;
   flex-direction: column;
-  background-color: #353535;
+  background-color: var(--footer);
   padding: 22px 25px 22px 25px;
   gap: 16px;
   @media screen and (min-width: 1024px) {
@@ -13,7 +13,7 @@
   }
   // Logo "Ohmyfood"
   h3 {
-    color: white;
+    color: var(--white);
     width: 139px;
     height: 27px;
     font-family: var(--header-font);
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     gap: 7px;
-    color: white;
+    color: var(--white);
     @media screen and (min-width: 1024px) {
       width: 100%;
       height: 20px;
@@ -44,7 +44,7 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 18.75px;
-      color: white;
+      color: var(--white);
     }
     &__row {
       display: flex;
