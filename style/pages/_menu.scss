@@ -1,6 +1,6 @@
 // ****** Style menupages ******
 
-@import "../modules/button_linear-gardien.scss";
+@import "../modules/button_linear-gradient.scss";
 @import "../modules/likes.scss";
 
 // Settings > Animation display-card
@@ -85,7 +85,7 @@ $anim-dur-block: 3000ms;
     .button {
       width: 186px;
       height: 50px;
-      @include button_linear-gardien;
+      @include button_linear-gradient;
     }
   }
   &__content {
