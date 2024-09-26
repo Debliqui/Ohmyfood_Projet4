@@ -8,7 +8,7 @@
 // Modules
 @import '../style/modules/_navBar';
 @import '../style/modules/_navBar_restaurant';
-@import '../style/modules/_button_linear-gardien';
+@import '../style/modules/_button_linear-gradient';
 @import '../style/modules/_footer';
 @import '../style/modules/_likes';
 @import '../style/modules/_animation_loader';
@@ -37,10 +37,10 @@
   --body-weight: 400;
   --body-highlight-weight: 500;
 
-  --header-size: 30px;
-  --title-size: 24px;
-  --body-size: 16px;
-  --body-highlight-size: 16px;
+  --header-size: 1.875rem;
+  --title-size: 1.5rem;
+  --body-size: 1rem;
+  --body-highlight-size: 1rem;
 
   --header-line-height: 40.82px;
   --title-line-height: 28.13px;
@@ -58,7 +58,7 @@ body {
   font-family: var(--body-font);
   font-style: normal;
   font-weight: 300;
-  font-size: 15.04px;
+  font-size: 0.94rem;
   line-height: 17.63px;
   color: var(--black);
   background-color: var(--background);
@@ -85,7 +85,7 @@ h3 {
   font-family: var(--title-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21.09px;
   color: var(--black);
 }

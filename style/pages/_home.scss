@@ -1,6 +1,6 @@
 //****** Style homepage ******
 
-@import "../modules/button_linear-gardien.scss";
+@import "../modules/button_linear-gradient.scss";
 @import "../modules/likes.scss";
 
 //****** Introduction ******
@@ -28,7 +28,7 @@
     // Title
     h2 {
       @media screen and (min-width: 1024px) {
-        font-size: 40px;
+        font-size: 2.5rem;
         height: 47px;
         display: flex;
         align-items: center;
@@ -37,8 +37,8 @@
     // Catchphrase
     p {
       font-weight: 300;
+      font-size: 1.125rem;
       @media screen and (min-width: 1024px) {
-        font-size: 18px;
         height: 46px;
         display: flex;
         align-items: center;
@@ -48,7 +48,7 @@
     .button {
       width: 218px;
       height: 50px;
-      @include button_linear-gardien;
+      @include button_linear-gradient;
     }
   }
 }
@@ -112,7 +112,7 @@
           justify-content: center;
           align-items: center;
           font-weight: 500;
-          font-size: 14.18px;
+          font-size: 0.886rem;
           line-height: 16.62px;
           width: 24px;
           height: 24px;
@@ -248,7 +248,7 @@
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
         // Text badge
         span {
-          font-size: 14px;
+          font-size: 0.875rem;
           font-weight: 500;
           line-height: 16.41px;
           color: var(--green);
@@ -258,7 +258,7 @@
     &__content {
       // Location
       p {
-        font-size: 17px;
+        font-size: 1.063rem;
         font-weight: 300;
         line-height: 19.92px;
       }
