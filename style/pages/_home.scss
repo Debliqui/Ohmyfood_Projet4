@@ -195,22 +195,17 @@
       }
     }
   }
-  // Button Like
-  .like {
-    padding-top: 7px;
-    width: 22px;
-    height: 21px;
-    @include like__setting;
-  }
-
   // Card content
   .card {
-    height: 251px;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white);
-    border-radius: 15px;
-    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    &__container {
+      height: 251px;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--white);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    }
     // Restaurant picture
     &__image {
       width: 340px;
@@ -228,9 +223,8 @@
       }
     }
     // Bottom information block
-    &__container {
+    &__information {
       width: 100%;
-      position: relative;
       padding: 16px 20px 16px 13px;
       display: flex;
       flex-direction: row;
@@ -268,6 +262,15 @@
         font-weight: 300;
         line-height: 19.92px;
       }
+    }
+    // Button Like
+    .like {
+      position: absolute;
+      bottom: 32px;
+      right: 25px;
+      width: 22px;
+      height: 21px;
+      @include like__setting;
     }
   }
 }
