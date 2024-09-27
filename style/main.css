@@ -838,37 +838,41 @@
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 43.74px;
+  color: var(--white);
   animation: loader 600ms ease-in-out infinite alternate both;
   /* Number automation > letter--# */
 }
 .letter--1 {
-  animation-delay: 60ms;
+  animation-delay: 54.5454545455ms;
 }
 .letter--2 {
-  animation-delay: 120ms;
+  animation-delay: 109.0909090909ms;
 }
 .letter--3 {
-  animation-delay: 180ms;
+  animation-delay: 163.6363636364ms;
 }
 .letter--4 {
-  animation-delay: 240ms;
+  animation-delay: 218.1818181818ms;
 }
 .letter--5 {
-  animation-delay: 300ms;
+  animation-delay: 272.7272727273ms;
 }
 .letter--6 {
-  animation-delay: 360ms;
+  animation-delay: 327.2727272727ms;
 }
 .letter--7 {
-  animation-delay: 420ms;
+  animation-delay: 381.8181818182ms;
 }
 .letter--8 {
-  animation-delay: 480ms;
+  animation-delay: 436.3636363636ms;
 }
 .letter--9 {
-  animation-delay: 540ms;
+  animation-delay: 490.9090909091ms;
 }
 .letter--10 {
+  animation-delay: 545.4545454545ms;
+}
+.letter--11 {
   animation-delay: 600ms;
 }
 
