@@ -3,7 +3,9 @@
 
 Ohmyfood is an online meal ordering website.
 
+## GitHub Pages
 
+https://debliqui.github.io/ohmyfood_Projet4/
 
 ## Demo
 
