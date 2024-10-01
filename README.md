@@ -12,14 +12,6 @@ https://debliqui.github.io/ohmyfood_Projet4/
 ![Demo](https://user.oc-static.com/upload/2022/06/22/16559016787093_Untitled%20design.png)
 
 
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run sass
-```
-
 ## Color Reference
 
 | Color             | Hex                                                                |
