@@ -95,7 +95,7 @@ $prog-bar-delay: 200ms;
   }
   46% {
     transform: scaleX(0.81);
-    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+    animation-timing-function: cubic-bezier(0.25, 1, 0.25, 1);
   }
   85%,
   100% {
