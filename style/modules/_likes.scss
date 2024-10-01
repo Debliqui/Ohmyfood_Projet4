@@ -48,6 +48,7 @@
     input:checked + .heart {
       animation: like-effect 0.8s cubic-bezier(0.45, -0.53, 0.49, 1.49) forwards;
     }
+    // action notclick
     :not(input:checked) + .heart {
       animation: like-effect-revert 0.8s cubic-bezier(0.45, -0.53, 0.49, 1.49) forwards;
     }
