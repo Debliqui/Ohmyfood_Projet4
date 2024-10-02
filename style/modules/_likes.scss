@@ -39,7 +39,7 @@
   .icone-heart {
     display: inline-block;
     cursor: pointer;
-    user-select: none;
+    user-select: none; //no effect on Chrome
     input {
       display: none; // disappearance of the input square
     }
