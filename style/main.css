@@ -329,7 +329,6 @@
   }
   100% {
     scale: 1;
-    stroke: #101010;
   }
 }
 .list-restaurant .card .like .icone-heart {
@@ -465,7 +464,6 @@
   }
   100% {
     scale: 1;
-    stroke: #101010;
   }
 }
 .menu__container__title .like .icone-heart {
