@@ -302,16 +302,13 @@
 }
 @keyframes like-effect {
   0% {
-    opacity: 0;
     scale: 0.85;
   }
   85% {
-    opacity: 0.85;
     scale: 1.15;
   }
   100% {
     fill: url(#grad1);
-    opacity: 1;
     stroke: none;
     scale: 1;
   }
@@ -319,12 +316,10 @@
 @keyframes like-effect-revert {
   0% {
     fill: url(#grad1);
-    opacity: 1;
     scale: 1;
     stroke: none;
   }
   85% {
-    opacity: 0.85;
     scale: 1.15;
   }
   100% {
@@ -437,16 +432,13 @@
 }
 @keyframes like-effect {
   0% {
-    opacity: 0;
     scale: 0.85;
   }
   85% {
-    opacity: 0.85;
     scale: 1.15;
   }
   100% {
     fill: url(#grad1);
-    opacity: 1;
     stroke: none;
     scale: 1;
   }
@@ -454,12 +446,10 @@
 @keyframes like-effect-revert {
   0% {
     fill: url(#grad1);
-    opacity: 1;
     scale: 1;
     stroke: none;
   }
   85% {
-    opacity: 0.85;
     scale: 1.15;
   }
   100% {
@@ -611,7 +601,6 @@
 }
 .menu .card__row__right .checkButton {
   display: inline-block;
-  cursor: pointer;
   user-select: none;
 }
 .menu .card__row__right input {
