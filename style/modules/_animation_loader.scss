@@ -13,13 +13,12 @@ $prog-bar-delay: 200ms;
 .loader {
   /* loder container*/
   background: linear-gradient(var(--primary-color), var(--secondary-color));
-  position: absolute;
+  position: fixed; //Fix loader to prevent scrolling
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 1;
-  position: fixed; //Fix loader to prevent scrolling
   display: flex;
   flex-direction: column;
   justify-content: center;
