@@ -177,23 +177,8 @@ $anim-dur-block: 3000ms;
       display: flex;
       flex-direction: row;
       align-items: center;
-      // Settings button check
-      .checkButton {
-        display: inline-block;
-        user-select: none;
-      }
-      input {
-        display: none; // disappearance of the input square
-      }
-      &__button {
-        height: 42px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        cursor: pointer;
-        margin-right: -59px; // margin-right to make it disappear check block
-        transition: margin-left 300ms, translate 300ms; // Animation > reveal check block and move to the left to reduce the left block
-      }
+      margin-right: -59px;  // margin-right to make it disappear check block
+      transition: margin-right 0.3s ease; // Animation > appearance of the block check
       // Price settings
       span {
         font-size: 0.94rem;
@@ -220,20 +205,19 @@ $anim-dur-block: 3000ms;
           margin: auto;
         }
       }
-      // action onclick
-      .checkButton input:checked + .card__row__right__button {
-        translate: -59px;
-        margin-left: 59px;
-      }
     }
-    // Move to the left to reduce the left block
-    @keyframes display-card {
-      0% {
-        transform: translateX(-110%);
-      }
-      100% {
-        transform: translateX(0);
-      }
+    &:hover .card__row__right {
+      margin-right: 0; // Invert margin-right on hover
+      
+    }
+  }
+   // Move to the left to reduce the left block
+   @keyframes display-card {
+    0% {
+      transform: translateX(-110%);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
 }

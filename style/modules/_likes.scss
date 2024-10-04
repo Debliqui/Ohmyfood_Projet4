@@ -6,28 +6,28 @@
     }
     @keyframes like-effect {
       0% {
-        scale: 0.85;
+        transform: scale(0.85);
       }
       85%{
-        scale: 1.15;
+        transform: scale(1.15);
       }
       100% {
         fill: url(#grad1); // id:"grad1 > linear-gradient"
         stroke: none;
-        scale: 1;
+        transform: scale(1);
       }
     }
     @keyframes like-effect-revert {
       0% {
         fill: url(#grad1); // id:"grad1 > linear-gradient"
-        scale: 1;
+        transform: scale(1);
         stroke: none;
       }
       85%{
-        scale: 1.15;
+        transform: scale(1.15);
       }
       100% {
-        scale: 1;
+        transform: scale(1);
       }
     }
   }
