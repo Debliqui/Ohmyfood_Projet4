@@ -192,7 +192,7 @@ $anim-dur-block: 3000ms;
         align-items: center;
         cursor: pointer;
         margin-right: -59px; // margin-right to make it disappear check block
-        transition: margin-left 300ms, translate 300ms; // Animation > reveal check block and move to the left to reduce the left block
+        transition: margin-left 300ms, transform 300ms; // Animation > reveal check block and move to the left to reduce the left block
       }
       // Price settings
       span {
@@ -222,7 +222,7 @@ $anim-dur-block: 3000ms;
       }
       // action onclick
       .checkButton input:checked + .card__row__right__button {
-        translate: -59px;
+        transform: translate(-59px);  
         margin-left: 59px;
       }
     }
