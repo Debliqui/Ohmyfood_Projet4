@@ -598,22 +598,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.menu .card__row__right .checkButton {
-  display: inline-block;
-  user-select: none;
-}
-.menu .card__row__right input {
-  display: none;
-}
-.menu .card__row__right__button {
-  height: 42px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
   margin-right: -59px;
-  transition: margin-left 300ms, transform 300ms;
+  transition: margin-right 0.3s ease;
 }
 .menu .card__row__right span {
   font-size: 0.94rem;
@@ -638,9 +624,8 @@
   color: var(--white);
   margin: auto;
 }
-.menu .card__row__right .checkButton input:checked + .card__row__right__button {
-  transform: translate(-59px);
-  margin-left: 59px;
+.menu .card__row:hover .card__row__right {
+  margin-right: 0;
 }
 @keyframes display-card {
   0% {
@@ -842,10 +827,10 @@
 @keyframes start-loader {
   /* Start loader > appearance before home-content */
   0% {
-    scale: 1;
+    transform: scale(1);
   }
   100% {
-    scale: 0;
+    transform: scale(0);
   }
 }
 .animation__letter {
